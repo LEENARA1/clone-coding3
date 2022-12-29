@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F0E2E5;  
+    font-family: source sans pro;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    background-color: #243344;
+}
+
+.container .header i {
+    color: rgb(255, 100, 44);
+    font-size: 24px;
+}
+
+.container .header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;   
+}
+
+.container .lists li {
+    display: inline-block;
+    
+}
+.container .lists li a { 
+    text-decoration: none;
+    color: white;
+    margin: 0 32px;
+}
+
+.container .lists li:hover {
+    background-color: rgb(255, 100, 44);
+    border-radius: 4px;
+    outline: none;
+    transition: all .4s;
+}
+
+.container .icon li {
+    color: white;
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+.container pi {
+    display: none;
+    color: rgb(255, 100, 44);
+}
+
+@media screen and (max-width: 942px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px;
+    }
+    .container .lists {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;    
+    }
+
+    .container .lists li {
+        padding-bottom: 4px;
+        
+    }
+
+    .container .icon {
+        
+        text-align: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-left: 6px;        
+    }
+
+    .container .lists li  {
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .container pi {
+        color: rgb(255, 100, 44);
+        font-size: 20px;
+        padding:8px 16px;
+        position:absolute;
+        right:0px;
+        top:5.5px;
+        display: block;
+    }
+    
+}
